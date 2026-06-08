@@ -1,0 +1,21 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+anchor_escrow = "2dg5KrQRQicucSArxg5JQnRC7Z6TJoZarG4h5TbG5Kzz"
+
+[programs.devnet]
+anchor_escrow = "2dg5KrQRQicucSArxg5JQnRC7Z6TJoZarG4h5TbG5Kzz"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cargo test"
+
+[hooks]
